@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  'Times New Roman', Times, serif;
+}
+.parent{
+    background-color: #042b58;
+    color: #fff;
+    height: 100vh;
+overflow: auto;
+    width: 100%;
+}
+.parent .con{
+margin:5px 10px ;
+text-align: right;
+}
+hr{
+    background-color: #7dafe7;
+    color: #bdcee3;
+    margin: 5px 0px;
+    height: 3px;
+    border: none;
+}
+#country{
+    margin: 5px 3px;
+    font-size: 100px;
+    text-align: center;
+
+}
+.con{
+    background-color: #1b3f68;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #1f497a;
+    position: relative;
+
+}
+
+.con .box1{
+    text-align: right;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+.con .box2{
+    text-align: left;
+}
+.parent .par{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-around;
+margin: 3rem auto;
+
+}
+
+.parent .par .box > h3{
+    background-color: #78a6dc;
+    padding: 20px;
+    text-align: right;
+}
+.parent .par .box > h4{
+    background-color: #0454b0;
+    height: 130px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    font-size: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.parent .select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .select select{
+    width: 150px;
+background-color: #042b58;
+color: #fff;
+border-radius: 10px;
+outline: none;
+border: 2px #1b3f68 solid;
+padding: 3px 10px;
+cursor: pointer;
+
+}
+option{
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .par {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .par {
+       width: 60%;
+       display: flex;
+       flex-wrap: wrap;
+    gap: 10px;
+
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .par {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+    gap: 10px;
+
+    }
+}
